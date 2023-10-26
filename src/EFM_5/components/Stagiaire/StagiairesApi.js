@@ -7,6 +7,12 @@ export default function StagiairesApi() {
       .then((response) => response.json())
       .then((data) => setStagiaires(data));
   });
+  // useEffect(() => {
+  //   axios
+  //     .get("http://www.ofppt.ma/api/stagiaires")
+  //     .then((response) => setStagiaires(response.data))
+  //     .catch((error) => console.log(error));
+  // }, []);
   return (
     <div>
       <table>
